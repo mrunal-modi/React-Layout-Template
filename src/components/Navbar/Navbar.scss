@@ -1,0 +1,29 @@
+.navbar{
+  background-color: #2c6bcc;
+  .sidebar-toggler{
+      &:focus{
+          box-shadow: none;
+          outline: none;
+      }
+  }
+  ul{
+      flex-direction: row;
+      li{
+          a.nav-link{
+              color: #fff;
+              padding-right: 0.5rem;
+              padding-left: 0.5rem;
+              &:hover{
+                  color: #fff;
+                  opacity: 0.7;
+              }
+              &:focus{
+                  color: #fff;
+              }
+          }
+      }
+  }
+  .navbar-brand img {
+      max-height: 25px;
+  }
+}   

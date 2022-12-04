@@ -1,0 +1,103 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.main {
+  /* display: flex; */
+  padding-top: 75px;
+  height: calc(100vh - 50px);
+  overflow: auto;
+  background-color: white;
+  width: calc(100% - 65px);
+  margin-left: 65px;
+  // margin-top: 75px;
+  transition: all 300ms ease-in-out;
+  &.sidebar-open {
+    @media (min-width: 786px) {
+      width: calc(100% - 220px);
+      margin-left: 220px;
+    }
+  }
+}
+
+.main > section {
+  padding: 32px;
+}
+
+
+.ml-auto{
+  margin-left: auto;
+}
+
+.mr-auto{
+  margin-right: auto;
+}
+
+.margin-bottom-20{
+  margin-bottom: 20px;
+}
+
+.margin-top-20{
+  margin-top: 20px;
+}
+
+.margin-left-10{
+  margin-left: 10px;
+}
+
+.margin-right-10{
+  margin-right: 10px;
+}
+
+.padding-20 {
+  padding : 20px !important;
+  
+}
+
+.padding-10 {
+  padding : 10px !important;
+  
+}
+
+.card {
+  padding: 15px;
+}
+
+.width-100{
+  width: 100%;
+}
+
+.flex-row{
+  flex-direction: row !important;
+}
+
+.pull-right{
+  float: right;
+}
+
+label{
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 767px) {
+    .hidden-sm{
+      display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .hidden-sm-up{
+      display: none;
+    }
+}
